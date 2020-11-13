@@ -8,6 +8,18 @@ var connection = mysql.createConnection({
     port: 3306,
     user: "root",
     password: process.env.SQL_PASSWORD,
-    database: "employee_db"
+    database: "employee_summaryDB"
 
 });
+
+connection.connect(function(err) {
+    if (err) throw err;
+});
+
+function empsum() {
+    inquirer.prompt([
+        {
+            
+        }
+    ])
+}
